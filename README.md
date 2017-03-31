@@ -1,8 +1,8 @@
 # README #
 
 This repository contains an Android app that served as a bachelor internship.
-The app can be administered through the Fit-Up Webapp, which is available through this repository <https://github.com/githubprgrammer/Webapp-Fit-Up>
-The app uses the webapp "Kompass", which is available through this repository <https://bitbucket.org/Alfhir/kompass>
+The app can be administered through the Fit-Up Webapp, which is available through this repository <https://github.com/githubprgrammer/Webapp-Fit-Up>.
+The app uses the webapp "Kompass", which is available through this repository <https://bitbucket.org/Alfhir/kompass>.
 
 ### What is this repository for? ###
 * Aim of the bachelor internship was to create an app that provides motivational help for the user by using various scientificly designed motivation methods, with the goal to provide aid in retaining their motivations regarding sporting activities. The app shal furthermore collect psychologically interesting informations about the users behavior. The app is subject of interest regarding further development by the TU Darmstadt, Germany. For further development we suggest Android Studio.
