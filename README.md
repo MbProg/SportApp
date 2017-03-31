@@ -67,7 +67,7 @@ This prototype has been tested manually and with help of the JUnit framework.
 * syncronize the project's gradle files (open "build.gradle" and click on the message "Sync now" in the top right corner)
 * set your database URL, as explained above
 * build the APK via Build -> Build APk or Build -> Generate Signed APK
-* load the APK onto an Android Smartphone with Android Version 7.0 or newer
+* load the APK onto an Android Smartphone with Android Version 5.0 or newer
 * install the application and run it
 
 ### Contribution guidelines ###
