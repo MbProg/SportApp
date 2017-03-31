@@ -1,7 +1,7 @@
 # README #
 
 This repository contains an Android app that served as a bachelor internship.
-The app can be administered through the Fit-Up Webapp, which is available through this repository <github.com/githubprgrammer/Webapp-Fit-Up>
+The app can be administered through the Fit-Up Webapp, which is available through this repository <https://github.com/githubprgrammer/Webapp-Fit-Up>
 The app uses the webapp "Kompass", which is available through this repository <https://bitbucket.org/Alfhir/kompass>
 
 ### What is this repository for? ###
