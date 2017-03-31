@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/abstand_stimmungsabfrage"
+        android:key="pref_key_storage_settings">
+
+
+        <ListPreference
+            android:title="@string/abstand_stimmungsabfrage_v"
+            android:key="lstStmabfrageAbstand_v"
+            android:defaultValue="3"
+            android:summary="%s"
+            android:entries="@array/ArrrayStmabfrageAbstand"
+            android:entryValues="@array/ArrrayStmabfrageAbstandeValue" />
+        <ListPreference
+            android:title="@string/abstand_stimmungsabfrage_n"
+            android:key="lstStmabfrageAbstand_n"
+            android:defaultValue="3"
+            android:summary="%s"
+            android:entries="@array/ArrrayStmabfrageAbstand"
+            android:entryValues="@array/ArrrayStmabfrageAbstandeValue" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/erinnerung_training"
+        android:key="pref_key_storage_settings">
+
+        <ListPreference
+            android:title="@string/fortbewegungsmittelFittness"
+            android:key="lstVerkehrsmittel"
+            android:defaultValue="1"
+            android:summary="%s"
+            android:entries="@array/ArrrayVerkehrsmittel"
+            android:entryValues="@array/ArrrayVerkehrsmittelValue" />
+        <Preference
+        android:title="@string/trainingszeiten_und_studioadresse"
+        android:summary="@string/wann_und_wo_findet_training_statt">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="org.tud.bp.fitup"
+            android:targetClass="org.tud.bp.fitup.Activity.ActivitySettingInitializer" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title= "Kompass"
+        android:key="pref_key_storage_settings">
+
+        <Preference
+            android:title="Kompass"
+            android:summary="Zum Bearbeiten deiner Angaben im Kompass">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="org.tud.bp.fitup"
+                android:targetClass="org.tud.bp.fitup.Activity.ActivityKompass" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/info_ueber"
+        android:key="pref_key_storage_settings">
+        <Preference
+            android:title="@string/info_ueber_fitup"
+            android:key="pref_key_storage_settings"
+            >
+            <intent android:action="android.intent.action.VIEW"
+                android:targetPackage="org.tud.bp.fitup"
+                android:targetClass="org.tud.bp.fitup.Activity.ActivityAbout"
+                />
+
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.tud.bp.fitup.Activity.ActivityMain">
+
+    <item
+        android:id="@+id/icon_save"
+        android:icon="@drawable/ic_save"
+        android:title="@string/speichern"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_add"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/hinzufuegen"
+        app:showAsAction="always"/>
+</menu>

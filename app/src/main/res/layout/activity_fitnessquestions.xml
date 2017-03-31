@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+
+    <ScrollView
+        android:id="@+id/scrollViewfitnessquestions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/llfitnessquestions"
+            android:weightSum="2"
+            android:focusableInTouchMode="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFitnessFragebogenausfüllen"
+            android:text="@string/Wie_gut_koennen_Sie_folgende_Taetigkeiten_bewaeltigen"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="normal|bold"
+            android:textSize="22sp"
+            android:layout_weight="0.8"/>
+
+           <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/txtcanyou"
+            android:text="@string/Koennen_Sie"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="normal|bold"
+            android:fontFamily="casual"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtstuhlaufstehen"
+                android:text="@string/auf_einem_Stuhl_sitzend_ohne_Hilfe_aufstehen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvstuhlaufstehen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txteinkaufskorb"
+                android:text="@string/einen_schweren_Einkaufskorb_ueber_mehrere_Etagen_tragen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lveinkaufskorb"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtkistetragen"
+                android:text="@string/eine_volle_Bierkiste_in_den_Keller_tragen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvkistetragen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtsitup"
+                android:text="@string/aus_der_Rueckenlage_ohne_Hilfe_der_Arme_den_Oberkoerper_aufrichten"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvsitup"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtkofferheben"
+                android:text="@string/einen_schweren_Koffer_ueber_Kopfhoehe_heben"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvkofferheben"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtkoffertragen"
+                android:text="@string/zwei_schwere_Koffer_ueber_mehrere_Etagen_tragen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvkoffertragen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txthantelstemmen"
+                android:text="@string/eine_Hantel_mit_mehr_als_Ihrem_Koerpergewicht_hochstemmen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvhantelstemmen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtflottgehen"
+                android:text="@string/um_mehrere_Blocks_flott_gehen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvflottgehen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txttreppengehen"
+                android:text="@string/mehrere_Treppen_hochgehen_ohne_sich_auszuruhen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvtreppengehen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txt2kmgehen"
+                android:text="@string/zwei_Kilometer_schnell_gehen_ohne_sich_auszuruhen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lv2kmgehen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txt1kmjoggen"
+                android:text="@string/einen_Kilometer_ohne_Pause_joggen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lv1kmjoggen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txt30minjoggen"
+                android:text="@string/Minuten_ohne_Pause_joggen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lv30minjoggen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txt60minjoggen"
+                android:text="@string/eine_Stunde_ohne_Pause_joggen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lv60minjoggen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtmarathon"
+                android:text="@string/einen_Marathon_laufen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvmarathon"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtanziehen"
+                android:text="@string/einen_engen_Pulli_und_Socken_alleine_aus_und_anziehen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvanziehen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtsitzendboden"
+                android:text="@string/auf_einem_Stuhl_sitzend_mit_den_Haenden_den_Boden_erreichen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvsitzendboden"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtschuhebinden"
+                android:text="@string/im_Stehen_Schuhe_binden"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvschuhebinden"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtrueckenberuehren"
+                android:text="@string/mit_der_Hand_von_unten_auf_dem_Ruecken_ein_Schulterblatt_beruehren"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvrueckenberuehren"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtstehendboden"
+                android:text="@string/aus_dem_Stand_mit_den_Haenden_den_Boden_erreichen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvstehendboden"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtkopfknie"
+                android:text="@string/im_Stehen_mit_dem_Kopf_die_gestreckten_Knie_beruehren"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvkopfknie"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtbruecke"
+                android:text="@string/rueckwaerts_bis_in_die_Bruecke_abbeugen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvbruecke"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txttrepperunter"
+                android:text="@string/eine_Treppe_hinab_gehen_ohne_sich_festzuhalten"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvtrepperunter"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txteinbeinstand"
+                android:text="@string/auf_einem_Bein_stehen_ohne_sich_festzuhalten"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lveinbeinstand"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtpurzelbaum"
+                android:text="@string/einen_Purzelbaum"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvpurzelbaum"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtballprellen"
+                android:text="@string/im_schnellen_Gehen_einen_Ball_prellen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvballprellen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtzaunsprung"
+                android:text="@string/mit_Abstuetzen_ueber_einen_ein_Meter_hohen_Zaun_springen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvzaunsprung"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtkurveohnehand"
+                android:text="@string/freihaendig_mit_dem_Fahrrad_um_eine_Kurve_fahren"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvkurveohnehand"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtradschlagen"
+                android:text="@string/ein_Rad_schlagen"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+            <org.tud.bp.fitup.UI_Controls.FragebogenListview
+                android:id="@+id/lvradschlagen"
+                android:layout_width="match_parent"
+                android:divider="#00279a"
+                android:entries="@array/str_fitnessantworten"
+                android:dividerHeight="2dp"
+                tools:listitem="@layout/lstnotificationcell"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/bkg"
+                android:layout_height="250dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/txtfragebogenende"
+                android:text="@string/Fragebogen_ist_beendet_Bitte_speichern_Sie_Ihre_Antworten"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

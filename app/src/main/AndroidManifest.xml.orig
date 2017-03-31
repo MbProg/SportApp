@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fitup">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- We need this permission!!! -->
+    <!-- Permission to use AlarmManager -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".Activity.FireApp"
+        android:allowBackup="true"
+        android:icon="@drawable/sport_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.ActivityMain"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ActivityDiaryEntry"
+            android:label="@string/tagebucheintrag" />
+        <activity
+            android:name=".Activity.ActivityDiary"
+            android:label="@string/Tagebuch"
+            android:parentActivityName=".Activity.ActivityMain" />
+        <activity android:name=".Activity.ActivitySettings" />
+        <activity
+            android:name=".Activity.ActivityStimmungsAbgabe"
+            android:parentActivityName=".Activity.ActivityMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.ActivityMain" />
+        </activity>
+        <activity android:name=".Activity.ActivitySettingInitializer" />
+        <activity android:name=".Activity.ActivityChallenge" />
+        <activity
+            android:name=".Activity.ActivityCategories"
+            android:label="@string/KategorieAuswählen..." />
+        android:parentActivityName=".Activity.ActivitySelectedExercises" />
+        <activity
+            android:name=".Activity.ActivityExercises"
+            android:parentActivityName=".Activity.ActivityCategories" />
+        <activity
+            android:name=".Activity.ActivitySelectedExercises"
+            android:label="@string/AusgewählteExercises" />
+        <activity android:name=".Activity.ActivityFragebogen"
+            android:parentActivityName=".Activity.ActivityMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.ActivityMain" />
+        </activity>
+        <activity android:name=".Activity.ActivityFitnessFragebogen"
+            android:parentActivityName=".Activity.ActivityMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.ActivityMain" />
+        </activity>
+        <activity android:name=".Activity.ActivityMotivationMessage" />
+        <activity android:name=".Activity.ActivityTrainQuestioning" />
+        <activity android:name=".Activity.ActivityKompass" />
+        <activity android:name=".Activity.ActivityNewChallenge" />
+        <activity
+            android:name=".Activity.ActivityLogin"
+            android:label="@string/title_activity_login" />
+
+        <receiver android:name=".Utilities.AlertReceiver" />
+
+        <activity android:name=".Activity.Activity_lst_stimmungsabfrage" />
+<<<<<<< HEAD
+        <activity android:name=".Activity.ActivityAbout" />
+        <activity android:name=".Activity.Activity_Stimmungsbarometer_rpt"></activity>
+=======
+        <activity android:name=".Activity.Activity_lst_fitnessfragebogen" />
+        <activity android:name=".Activity.Activity_lst_bsafragebogen" />
+        <activity android:name=".Activity.ActivityAbout"></activity>
+>>>>>>> 5ec8629705075f363e3ca2ece5ca733976164cf8
+    </application>
+
+</manifest>

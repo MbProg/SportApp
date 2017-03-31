@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.tud.bp.fitup.Activity.ActivityMain">
+
+    <item
+        android:id="@+id/icon_info"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="Info"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icon_save"
+        android:icon="@drawable/ic_save"
+        android:title="@string/speichern"
+        app:showAsAction="always"/>
+
+</menu>
